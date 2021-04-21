@@ -1,0 +1,27 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.partners.enable }}
+{{ with $data.partners }}
+{{"<!-- Start partners -->" | safeHTML}}
+<section id="partners" class="partners overly section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center wow fadeInUp title" data-wow-duration="500ms">
+				<h2>{{ .title }}</h2>			
+			</div>
+		</div>
+		<div class="row d-flex justify-content-around align-items-center ">
+			{{ range .partners_item }}
+			{{"<!-- partners single -->" | safeHTML}}
+			<div class="col-3">
+				{{"<!-- client photo -->" | safeHTML}}
+					<img class="mx-auto d-block lozad logo" data-src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
+			</div>
+			{{"<!-- /partners single -->" | safeHTML}}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{"<!-- /partners -->" | safeHTML}}
+{{ end }}
+{{ end }}

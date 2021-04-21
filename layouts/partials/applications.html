@@ -1,0 +1,61 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.applications.enable }}
+{{ with $data.applications }}
+<section id="applications" class="applications section">
+	
+	
+	<div class="container part_1" >
+		
+		<div class="row text-center justify-content-center">
+			<div class="col-md-7">
+				<h2 class="applications-subtitle">{{ .title | markdownify }}</h2>
+				<p class="applications-content">{{ .content | markdownify }}</p>
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="container part_2" style='background-image: url("{{ .bg_image_webp | absURL }}")'>
+		<!-- this image is for trigger this section fallback background image -->
+		<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'" src="{{ .bg_image_webp | absURL }}" />
+        <div class="row justify-content-around">
+			{{ range $index, $element:= .items }}
+
+			<div class="col-md-5  d-flex justify-content-center">
+
+				<div class="item text-center align-middle {{ if modBool $index 2 }} item_even {{ else }} item_odd {{ end }}">
+					<div class="content">
+						<h3>{{$element.title}}</h3>
+						<hr>
+						<p>{{$element.content}}</p>
+					</div>
+					
+				</div>
+				
+        	</div>
+			{{end}}
+
+		</div>
+		
+	</div>
+	<div class="container part_3">
+		<div class="row justify-content-center">
+			<div class="col text-center">
+				<h2>How it Works</h2>
+			</div>		
+		</div>
+		
+		<div class="row justify-content-center">
+			{{ range $index, $element:= .items_2 }}
+			<div class="col-lg-3 item_2">
+				<h3>{{$element.title}}</h3>
+				<hr>
+				<p>{{$element.content}}</p>
+			</div>
+			{{end}}
+		</div>
+	</div>
+</section>
+{{end}}
+{{end}}

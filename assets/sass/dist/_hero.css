@@ -1,0 +1,117 @@
+.hero-area {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.hero-area .container {
+  padding-top: 7%;
+}
+
+.hero-area .video-button {
+  background: #fff;
+  color: var(--bg-color-1);
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.hero-area .video-button i {
+  line-height: 60px;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.hero-area h1 {
+  font-size: 90px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .hero-area h1 {
+    font-size: 60px;
+  }
+}
+.hero-area p {
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-area .btn-transparent {
+  margin-top: 40px;
+  border-color: #fff;
+  padding: 14px 50px;
+  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-area-video {
+  height: 100vh;
+  position: inherit !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-area-video {
+  text-align: center;
+}
+
+.hero-area-video h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-area-video p {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-area-video .btn-main {
+  margin-top: 20px;
+}
+
+.dark-bg {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-subtitle {
+  font-size: 3rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.hero-content {
+  font-size: 2rem;
+  /* padding-top: 3%; */
+  padding-bottom: 3%;
+}
+
+.drone {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translateZ(0.25px) scale(0.75) translateX(-85%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .drone {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,42 @@
+/*=================================================================
+  Solution section
+// ==================================================================*/
+
+.solution .part_1{
+    margin-bottom: 4%;
+    font-size: 150%;
+
+    p {
+        margin-top: 2%;
+        // font-size: larger;
+    }
+}
+
+.solution .part_2 {
+    // background-size: 1550px 1050px;
+    background-repeat: no-repeat;
+    background-position-x: 40em;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+.solution .part_2 .item {
+    background-color: var(--bg-color-dark);
+    color: white;
+    padding: 6%;
+    margin: 6%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    display:block; 
+}
+
+.solution .part_2 .content {
+        display:table-cell;
+        vertical-align:middle;
+        font-size: 130%;
+    
+        p {
+            color: white;
+        }
+}

@@ -1,0 +1,38 @@
+/*=================================================================
+  Navigation
+==================================================================*/
+
+.navigation {
+    background-color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--text-color-title);
+}
+
+.navbar-dark .navbar-nav>.nav-link,
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--bg-color-dark);
+}
+
+.navbar-dark .navbar-nav>.nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.show:hover,
+.navbar-dark .navbar-nav .show>.nav-link:hover {
+    color: var(--text-color-subtitle);
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+}
+
+// .bg-2 {
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+// } */

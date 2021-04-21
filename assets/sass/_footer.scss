@@ -1,0 +1,78 @@
+/*=================================================================
+  Footer
+==================================================================*/
+.footer {
+    background-color: var(--bg-color-dark);
+    color: white;
+    padding: 4%;
+
+    p{
+        color: white;
+    }
+
+    h6 {
+        color: white;
+    }
+
+}
+.footer-links i{
+    margin-right: 10px;
+}
+
+.social-icon {
+    padding: 60px 0 35px;
+}
+
+.social-icon ul {
+    text-align: center;
+}
+
+.social-icon ul li {
+    margin-bottom: 4px;
+    list-style: none;
+}
+
+.social-icon ul li a {
+    background-color: #26292e;
+    border: 1px solid transparent;
+    display: block;
+    height: 40px;
+    width: 40px;
+    transition: all 400ms ease-out 0s;
+}
+
+.social-icon ul li a:hover {
+    background: var(--bg-color-1);
+}
+
+.social-icon ul li a:hover i {
+    color: var(--highlight1);
+    opacity: 1;
+}
+
+.social-icon ul li a i {
+    color: #55606a;
+    display: inline-block;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    opacity: 0.3;
+    transition: all 400ms ease-out 0s;
+}
+
+
+#scrollUp {
+    border: 1px solid #4e595f;
+    bottom: 15px;
+    color: #fff;
+    display: none;
+    padding: 8px 12px;
+    position: fixed;
+    right: 20px;
+    z-index: 600;
+}
+
+#scrollUp:hover {
+    background-color: var(--bg-color-1);
+    border: 1px solid var(--bg-color-1);
+}

@@ -1,0 +1,48 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.solution.enable }}
+{{ with $data.solution }}
+{{"<!-- solution -->" | safeHTML }}
+<section id="solution" class="solution section">
+
+	<div class="container part_1" >
+		{{"<!-- section title -->" | safeHTML }}
+
+		<div class="row text-center justify-content-center">
+
+			<div class="col-md-10">
+				<h2 class="">{{ .title | markdownify }}</h2>
+				<h3 class="">{{ .subtitle | markdownify }}</h3>
+				<p class="">{{ .content | markdownify }}</p>
+			</div>
+			{{"<!-- /section title -->" | safeHTML }}
+
+		</div>
+		{{"<!-- /section title -->" | safeHTML }}
+
+	</div>
+
+	<div class="row d-flex justify-content-center part_2" style='background-image: url("{{ .bg_image_webp | absURL }}")'>
+		<!-- this image is for trigger this section fallback background image -->
+		<img style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'" src="{{ .bg_image_webp | absURL }}" />
+
+		<div class="col-lg-4 col-md-6">
+			<div class="item align-middle">
+				<div class="content">
+					<ul class="solution-bar">
+						{{ range $index, $element:= .solution_item }}
+						<li>
+							<p>{{ .name }}</p>
+						</li>
+						{{ end }}
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+	</div>
+</section>
+{{"<!-- /skill -->" | safeHTML }}
+{{ end }}
+{{ end }}
