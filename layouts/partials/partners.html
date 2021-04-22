@@ -13,7 +13,7 @@
 		<div class="row d-flex justify-content-around align-items-center ">
 			{{ range .partners_item }}
 			{{"<!-- partners single -->" | safeHTML}}
-			<div class="col-3">
+			<div class="col-lg-3 col-md-6 col-sm-12">
 				{{"<!-- client photo -->" | safeHTML}}
 					<img class="mx-auto d-block lozad logo" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
 			</div>
