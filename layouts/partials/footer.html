@@ -6,7 +6,7 @@
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row wow fadeInUp justify-content-between" data-wow-duration="500ms">
-            <div class="col-lg-9 col-xs-6 col-md-3">
+            <div class="col-lg-9 col-md-12 col-xs-12 ">
                 <h6>Contacts</h6>
 
                 <ul class="footer-links">
@@ -20,7 +20,7 @@
                 {{"<!-- Footer Social Links -->" | safeHTML}}
                 <div class="social-icon">
                     <ul class="list-inline">
-                        {{ range .Site.Params.social }}
+                        {{ range $.Site.Params.social }}
                         <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
                         {{ end }}
                     </ul>
@@ -32,7 +32,7 @@
     </div>
     <div class="container justify-content-between">
         <div class="row">
-            <div class="col-lg-9 col-xs-6 col-md-3">
+            <div class="col-lg-9 col-md-12 ">
                 <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
                     <a href="#">Flox Aktiebolag</a>.
                 </p>
@@ -55,9 +55,9 @@
 <script src="{{ $script.Permalink }}"></script>
 
 <script type="text/javascript" id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js" data-accept-on-scroll="true" data-moreinfo="https://www.iubenda.com/privacy-policy/24981710"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 
 {{ "<!-- google analitycs -->" | safeHTML }} {{ with .Site.Params.google_analitycs_id }}
 <script>

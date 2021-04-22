@@ -12,6 +12,8 @@ body {
     font-family: "Oxygen", sans-serif;
     color: var(--text-color-p);
     -webkit-font-smoothing: antialiased;
+    overflow-x:hidden;
+
 }
 
 /*=================================================================
@@ -99,6 +101,10 @@ a:hover {
 .section {
     padding-top:8%;
     // padding-bottom: 6%;
+}
+
+.single-section{
+    padding-top: 2%;
 }
 
 @media (max-width: 480px) {

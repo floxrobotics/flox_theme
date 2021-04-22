@@ -15,6 +15,13 @@
     }
 
 }
+
+.footer-img {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .footer-links i{
     margin-right: 10px;
 }
@@ -33,7 +40,7 @@
 }
 
 .social-icon ul li a {
-    background-color: #26292e;
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
     display: block;
     height: 40px;
@@ -51,7 +58,7 @@
 }
 
 .social-icon ul li a i {
-    color: #55606a;
+    color: white;
     display: inline-block;
     font-size: 32px;
     line-height: 40px;

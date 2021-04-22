@@ -15,7 +15,7 @@
 			{{"<!-- partners single -->" | safeHTML}}
 			<div class="col-3">
 				{{"<!-- client photo -->" | safeHTML}}
-					<img class="mx-auto d-block lozad logo" data-src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
+					<img class="mx-auto d-block lozad logo" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
 			</div>
 			{{"<!-- /partners single -->" | safeHTML}}
 			{{ end }}

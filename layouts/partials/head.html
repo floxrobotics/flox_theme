@@ -23,10 +23,6 @@
 	{{ $styles := resources.Get "sass/style.scss" | resources.ToCSS | resources.Minify }}
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 	
-	{{/*  {{"<!-- Main Stylesheet -->"|safeHTML}}
-	{{ $styles := resources.Get "css/style.css"  | resources.Minify }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">  */}}
-	
 	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
 	<link rel="stylesheet" href="{{ "css/custom.css" | relURL}} " media="screen">
 
