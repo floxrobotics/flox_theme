@@ -15,6 +15,7 @@
       {{ range $paginator.Pages }}
       {{ .Render "article" }}
       {{ end }}
+
       <div class="col-12">
         {{ template "_internal/pagination.html" . }}
       </div>
