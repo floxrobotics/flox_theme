@@ -41,6 +41,7 @@
 .post-block {
     background-color: #f7f7f7;
     margin-bottom: 10px;
+    height: 100%;
 }
 
 .post-block .content {
@@ -56,6 +57,12 @@
 
 .post-block .content h4 {
     font-size: 18px;
+}
+
+.post-block .media-wrapper img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
 .note .media-wrapper {
@@ -332,6 +339,10 @@
 input#e-mail,
 #hidden_iframe {
     display: none;
+}
+
+.post-single-content img{ 
+    max-width: 100%;
 }
 
 
