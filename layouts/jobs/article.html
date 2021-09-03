@@ -1,0 +1,10 @@
+<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+  <div class="post-block">
+    <div class="content">
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <h4>Open until: {{ if .ExpiryDate.IsZero }} TBA {{ else }} {{( dateFormat "2006-01-02" .ExpiryDate) }} {{end}}</h4>
+      <p>{{ .Param "description" }}</p>
+      <a class="btn btn-transparent" href="{{ .Permalink }}">{{ i18n "readMore" }}</a>
+    </div>
+  </div>
+</article>
